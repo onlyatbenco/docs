@@ -37,10 +37,14 @@ In the case of a failed login, the most common errors are:
 | **Error** | **Description** |
 |-|-|
 | **access_denied** | When using web-based authentication, the resource server denies access per OAuth2 specifications |
+| **blocked_user** | User has been blocked |
+| **invalid_scope** | Token does not possess appropriate scope(s) |
+| **invalid_user** | User does not exist |
 | **invalid_user_password** | The username and/or password used for authentication are invalid |
 | **mfa_invalid_code** | The [multifactor authentication](/multifactor-authentication) code provided by the user is invalid/expired |
 | **mfa_registration_required** | The administrator has required [multifactor authentication](/multifactor-authentication), but the user has not enrolled |
 | **mfa_required** | The user must provide the [multifactor authentication](/multifactor-authentication) code to authenticate |
+| **password_change_required** | User must change password |
 | **password_leaked** | If the password has been leaked and a different one needs to be used |
 | **PasswordHistoryError** | The password provided for sign up/update has already been used (reported when [password history](/connections/database/password-options#password-history) feature is enabled) |
 | **PasswordStrengthError** | The password provided does not match the connection's [strength requirements](/connections/database/password-strength) |
